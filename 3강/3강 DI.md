@@ -3,8 +3,10 @@
 
 ## DI
 **Dependency Injection**    
+Dependency를 부품이라고 생각한다.       
 부품 조립이라고 이해하는 것이 더 빠르다.
 
+## Dependency들을 조립하기
 ### Composition has a
 ```
 class A
@@ -17,7 +19,7 @@ class A
 }
 ```
 자기가 직접 부품을 가지게 됨
-부품을 바꿔 낄 수 없다.
+부품을 바꿔 낄 수 없다.(붙박이형)
 
 ### Association has a
 ```
@@ -56,9 +58,9 @@ a.setB(b);
 부품이라는 객체를 다른 말로 Dependency라고 함. 이 Dependency를 꽂는 작업을 Injection이라고 함.
 
 > 장점 : 갈아끼우기 쉬움        
-> 단점 : 조립해야만 함.
+> 단점 : 조립해야만 작동을 함
 
-#### 조립 방법
+#### Injection(조립 방법)
 1. Setter Injection
 ```
 B b = new B();
