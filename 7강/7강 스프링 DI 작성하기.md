@@ -1,3 +1,6 @@
+# 스프링 DI 지시서 작성하기
+Spring Bean Configuration을 이용한 방법
+
 ## 결합하는 방식
 생성자 혹은 set함수
 
@@ -21,5 +24,11 @@
 #### Injection 방법
 ```<bean>``` 태그에 
 id가 같은 이름이 있을 수도 있으므로 class에 패키지명까지 입력
+```
+	<bean id="console" class="spring.di.ui.GridExamConsole">
+		<property name="exam" ref="exam"/>
+	</bean>
+```
 + 설정을 하기 위해서는 property 명에 set함수를 쓰는데 set을 생략하고 대문자를 소문자로 변경한다.
+
 + 값은 value 혹은 ref로 들어갈 수 있지만 값 형태가 아니기 때문에 ref로 입력한다.
