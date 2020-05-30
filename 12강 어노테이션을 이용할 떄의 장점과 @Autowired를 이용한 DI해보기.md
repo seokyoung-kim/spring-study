@@ -12,6 +12,7 @@
 
 ### DI 지원을 위한 스프링 어노테이션
 #### Autowired 어노테이션
+**Autowired**란 Dependency를 Injection해주는 Annotation으로 xml의 역할을 대신함.
 Autowired를 붙이면 DI를 하는 property를 지울수 있음.
 setter 메소드에 Autowired를 붙이면 됨.
 
